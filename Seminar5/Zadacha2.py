@@ -15,7 +15,7 @@ def bot_calc(knft):
     return k
 
 def input_dat(name):
-    x = int(input(f"{name}, введите количество конфет, которое возьмете от 1 до 28: "))
+    x = int(input(f"{name}, введите количество конфет от 1 до 28: "))
     while x < 1 or x > 28:
         x = int(input(f"{name}, введите количество конфет, не более 28: "))
     return x
