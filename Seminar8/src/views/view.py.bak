@@ -1,0 +1,11 @@
+def init_main_window():
+    
+    w = main_window.winfo_screenwidth()
+    h = main_window.winfo_screenheight()
+    w = w//2 # середина экрана
+    h = h//2 
+    w = w - 200 # смещение от середины
+    h = h - 200
+
+    main_window.title('Телефонный справочник')
+    main_window.geometry((f'700x400+{w}+{h}'))
